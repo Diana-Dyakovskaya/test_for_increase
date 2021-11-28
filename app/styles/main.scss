@@ -56,6 +56,7 @@ button::-moz-focus-inner {
 
 a, a:visited {
   text-decoration: none;
+  color: inherit;
 }
 
 a:hover {
@@ -77,3 +78,53 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*---------Основные стили-----------*/
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #a5a5a5;
+}
+
+.container {
+  margin: 25px 70px;
+}
+
+.header {
+  color: #ffffff;
+
+  .row {
+    display: flex;
+    height: 100%;
+    gap: 22px;
+  }
+
+  .row  > * {
+    min-height: 108px;
+    background-color: #777777;
+  }
+
+  &__logo {
+    flex: 1 1 12.7%;
+  }
+
+  .logo__link {
+    display: block;
+    height: 100%;
+    margin-top: 39px;
+    margin-bottom: 39px;
+  }
+
+  &__block {
+    flex: 1 1 29.1%;
+  }
+
+  &__content {
+    flex: 1 1 53.5%;
+    display: flex;
+    align-items: center;
+    .contacts {
+      margin-left: auto;
+      margin-right: 22px;
+    }
+  }
+}
