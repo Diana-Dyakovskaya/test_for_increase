@@ -145,7 +145,7 @@ body {
 }
 
 .aside {
-  flex: 1 1 19.1%;
+  flex: 1 0 184px;
   background-color: #777777;
   margin-bottom: auto;
   padding: 20px 13px 40px;
@@ -218,3 +218,102 @@ body {
     background-color: #dcdcdc;
   }
 }
+
+.footer {
+  color: #ffffff;
+
+  &__row {
+    display: flex;
+    gap: 28px;
+  }
+
+  &__block {
+    flex: 1 1 33.33%;
+  }
+
+  &__block:not(:last-child) {
+    padding: 18px 25px;
+    background-color: #777777;
+  }
+
+  &__block_flex {
+    display: flex;
+    justify-content: start;
+    gap: 5px;
+  }
+
+  &__list_column {
+    flex: 1 1 50%;
+  }
+
+  .marker {
+    margin-right: 7px;
+  }
+
+  .block-right {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .block-right__line {
+    flex: 1 1 50%;
+    background-color: #777777;
+  }
+}
+
+@media (max-width: 993px) {
+  .container {
+    margin: 25px 25px;
+  }
+
+  .content__card {
+    flex: 1 1 20%;
+  }
+}
+
+@media (max-width: 769px) {
+  .main {
+    &__bottom {
+      flex-direction: column;
+    }
+
+    .bottom__block {
+      flex: 1 1 100%;
+    }
+  }
+
+  .footer {
+    &__row {
+      flex-direction: column;
+    }
+
+    &__block {
+      flex: 1 1 100%;
+    }
+
+    .block-right {
+      flex-direction: row;
+    }
+  }
+}
+
+@media (max-width: 577px) {
+  .page__content {
+    flex-direction: column;
+  }
+
+  .aside {
+    flex: 1 1 100%;
+
+    &__content {
+      max-width: 100%;
+    }
+  }
+
+  .main {
+    flex: 1 1 100%;
+  }
+}
+
+
